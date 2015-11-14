@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>EdiblePy</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "bootstrap.css" %}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{% static "bootstrap.min.css" %}" type="text/css" media="screen" />
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link rel="stylesheet" href="{% static "custom.css" %}" type="text/css" media="screen"/>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	Logo
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+					<li class="dropdown">
+						<a href="../Brand/id/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Restaurants <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#">McDonalds</a></li>
+							<li><a href="#">Wendys</a></li>
+							<li><a href="#">Arbys</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grocery <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li><a href="#">Gerbers</a></li>
+                            <li><a href="#">Kellogs</a></li>
+                            <li><a href="#">Coca Cola</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+
+				<!-- Search -->
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-default">Search</button>
+				</form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="jumbotron feature">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-equalizer"></span>EdiblePy</h1>
+			<p>Edible food for all people.</p>
+			<p><a class="btn btn-default" href="#">Engage Now</a></p>
+		</div>
+	</div>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Superior Support
+                    <small>Allergy Statistics</small>
+                </h1>
+                <p>Worldwide, sensitization rates to one or more common allergens among school children are currently approaching 40%-50%. With 15 million people in the United States being affected by food allergies, the number of U.S. ER visits due to food allergy is over 30,0000. The world of food allergies can be a difficult place to navigate. That's where EdiblePy can help.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Feature Row -->
+        <div class="row">
+            <article class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="holder.js/700x300" alt="">
+                </a>
+                <h3>
+                    <a href="#">Nutritionix API</a>
+                </h3>
+                <p>EdiblePy is powered by Nutritionix API to bring nation wide menus to your finger tips. Powered by Nutritionix, Edible allows the user to query existing menus to find what foods are edible to them.</p>
+            </article>
+            
+        </div>
+        <!-- /.row -->
+
+        <!-- Feature Row -->
+        <div class="row">
+            <article class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="holder.js/700x300" alt="">
+                </a>
+                <h3>
+                    <a href="#">{{ RestaurantName }}</a>
+                </h3>
+                <p>EdiblePy is powered by Nutritionix API to bring nation wide menus to your finger tips. Powered by Nutritionix, Edible allows the user to query existing menus to find what foods are edible to them.</p>
+            </article>
+            
+        </div>
+        <!-- /.row -->        
+
+    </div>
+    <!-- /.container -->
+
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	
+</body>
+
+</html>
